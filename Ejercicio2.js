@@ -17,7 +17,7 @@ for (let i = 0; i < movies.length; i++) {
         anos2000+=1;
     }
 }
-console.log('Años antes 2000 '+anos2000);
+console.log('Años antes de 2000 '+anos2000);
 posteriores=movies.length-anos2000
 console.log('Despues de 2000 '+posteriores);
   

@@ -11,7 +11,7 @@ const capitals = {
     Ireland: 'Dublin'
   };
   
-  function getCapital(country) {
+  const getCapital=(country)=>{
     if(!country || !capitals[country]){
         return 'No está en la lista'
     }else{

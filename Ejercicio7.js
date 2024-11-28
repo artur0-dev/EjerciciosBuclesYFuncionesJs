@@ -10,12 +10,16 @@ const tracks = [
     { title: 'Hotel California', genre: 'Rock' },
     { title: 'Stairway to Heaven', genre: 'Rock' }
   ];
-  let ordenadasGenero = {};
-  for (let i = 0; i < tracks.length; i++) {
-    
-     if (!ordenadasGenero[tracks[i].genre]) {
-        ordenadasGenero[tracks[i].genre] = [];
-    }
-    ordenadasGenero[tracks[i].genre].push(tracks[i]);
-}
-console.log(ordenadasGenero);
+  
+  const ordena=(tracks)=>{
+    let ordenadasGenero = {};
+    for (let i = 0; i < tracks.length; i++) {
+        if (!ordenadasGenero[tracks[i].genre]) {
+           ordenadasGenero[tracks[i].genre] = [];
+       }
+       ordenadasGenero[tracks[i].genre].push(tracks[i]);
+   }
+   return ordenadasGenero;
+  }
+  
+console.log(ordena(tracks));

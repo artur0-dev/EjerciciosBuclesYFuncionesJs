@@ -11,15 +11,16 @@ const movies = [
     { title: 'Insomnia', duration: 118 }
   ];
   let duracionPelis = [];
-  function averageMovieDuration(movies) {
-        for (let i = 0; i < movies.length; i++) {
-            const minutos = Math.floor(movies[i].duration / 60);
-            const segundosRestantes = movies[i].duration % 60;
-            movies[i].duration = minutos+'m y '+ segundosRestantes+'s';
-            duracionPelis.push(movies[i]);
-        }
-        return duracionPelis;
+const averageMovieDuration=(movies)=> {
+    for (let i = 0; i < movies.length; i++) {
+        const minutos = Math.floor(movies[i].duration / 60);
+        const segundosRestantes = movies[i].duration % 60;
+        movies[i].duration = minutos+'m y '+ segundosRestantes+'s';
+        duracionPelis.push(movies[i]);
     }
+    return duracionPelis;
+}
+
 console.log(averageMovieDuration(movies));
   
   

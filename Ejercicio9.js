@@ -11,12 +11,13 @@ const xMen = [
     { name: 'Mystique', year: 1978 }
   ];
   
-  function findOldestXMen(xMen) {
+
+  const findOldestXMen=(xMen)=>{
     for (let i = 1; i < xMen.length; i++) {
-        if(xMen[i].year < xMen[0].year  ){
-            return xMen[i]
-        }
-    }
+      if(xMen[i].year < xMen[0].year  ){
+          return xMen[i]
+      }
+  }
   }
 console.log(findOldestXMen(xMen));  
   
